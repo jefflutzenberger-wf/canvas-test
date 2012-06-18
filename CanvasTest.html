@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="CanvasTimer.js" charset="utf-8"></script>
+        <script src="CanvasTestDocumentModel.js" charset="utf-8"></script>
+        <script src="CanvasTestPageModel.js" charset="utf-8"></script>
+        <script src="CanvasTest.js" charset="utf-8"></script>
+    </head>
+    <body onload="myCanvas.draw()">
+        <div id="my-image" style="position: absolute;"></div>
+        <canvas id="canvas-area" width="600" height="600" ></canvas>
+    </body>
+    <br/>
+    <input type="button" value="Zoom In" onclick="myCanvas.zoomIn()"/>
+    <input type="button" value="Zoom Out" onclick="myCanvas.zoomOut()"/>
+    <input type="button" value="Capture Image" onclick="myCanvas.captureImage()"/>
+    <input type="button" value="^ Scroll Up" onclick="myCanvas.scrollUp()"/>
+    <input type="button" value="v Scroll Down" onclick="myCanvas.scrollDown()"/>
+    <input type="button" value="Auto Scrol" onclick="myCanvas.autoScroll()"/>
+</html>
